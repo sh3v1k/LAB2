@@ -5,23 +5,23 @@ int main()
 {
 
 
- double x;
- double y;
+    double x;
+    double y;
 
 
- printf("Enter x:");
- scanf("%lf", &x);
+    printf("Enter x:");
+    scanf("%lf", &x);
 
-   if( 0 <= x && x < 3 )
-        x =1/2* cos(x/2)-1/(x * x)*sin(2*x);
-   else if ( 7 <= x && x < 10 )
-        x =4-(x*x);
-   else if ( 10 <= x && x < 30 )
-        x =10/x+(x*x);
-       else
-        x = 2;
+    if (0 <= x && x < 3)
+        y = 1 / 2 * cos(x / 2) - 1 / (x * x) * sin(2 * x);
+    else if (7 <= x && x < 10)
+        y = 4 - (x * x);
+    else if (10 <= x && x < 30)
+        y = 10 / x + (x * x);
+    else
+        y = 2;
 
- system("cls");
- printf("x = %lf", x);
- printf("\ny = %lf", y);
- return 0;
+    system("cls");
+    printf("x = %lf", x);
+    printf("\ny = %lf", y);
+    return 0;
